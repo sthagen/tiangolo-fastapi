@@ -1,5 +1,17 @@
 articles:
   english:
+  - author: Shahriyar(Shako) Rzayev
+    author_link: https://www.linkedin.com/in/shahriyar-rzayev/
+    link: https://www.azepug.az/posts/fastapi/#building-simple-e-commerce-with-nuxtjs-and-fastapi-series
+    title: Building simple E-Commerce with NuxtJS and FastAPI
+  - author: Rodrigo Arenas
+    author_link: https://rodrigo-arenas.medium.com/
+    link: https://medium.com/analytics-vidhya/serve-a-machine-learning-model-using-sklearn-fastapi-and-docker-85aabf96729b
+    title: "Serve a machine learning model using Sklearn, FastAPI and Docker"
+  - author: Navule Pavan Kumar Rao
+    author_link: https://www.linkedin.com/in/navule/
+    link: https://www.tutlinks.com/deploy-fastapi-on-ubuntu-gunicorn-caddy-2/
+    title: Deploy FastAPI on Ubuntu and Serve using Caddy 2 Web Server
   - author: Patrick Ladon
     author_link: https://dev.to/factorlive
     link: https://dev.to/factorlive/python-facebook-messenger-webhook-with-fastapi-on-glitch-4n90
