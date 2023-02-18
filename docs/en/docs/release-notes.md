@@ -2,6 +2,18 @@
 
 ## Latest Changes
 
+* ⬆️ Upgrade and re-enable installing Typer-CLI. PR [#6008](https://github.com/tiangolo/fastapi/pull/6008) by [@tiangolo](https://github.com/tiangolo).
+
+## 0.92.0
+
+🚨 This is a security fix. Please upgrade as soon as possible.
+
+### Upgrades
+
+* ⬆️ Upgrade Starlette to 0.25.0. PR [#5996](https://github.com/tiangolo/fastapi/pull/5996) by [@tiangolo](https://github.com/tiangolo).
+    * This solves a vulnerability that could allow denial of service attacks by using many small multipart fields/files (parts), consuming high CPU and memory.
+    * Only applications using forms (e.g. file uploads) could be affected.
+    * For most cases, upgrading won't have any breaking changes.
 
 ## 0.91.0
 
