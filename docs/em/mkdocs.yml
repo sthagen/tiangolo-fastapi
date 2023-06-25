@@ -11,18 +11,19 @@ theme:
     accent: amber
     toggle:
       icon: material/lightbulb
-      name: Switch to light mode
+      name: Switch to dark mode
   - media: '(prefers-color-scheme: dark)'
     scheme: slate
     primary: teal
     accent: amber
     toggle:
       icon: material/lightbulb-outline
-      name: Switch to dark mode
+      name: Switch to light mode
   features:
   - search.suggest
   - search.highlight
   - content.tabs.link
+  - navigation.indexes
   icon:
     repo: fontawesome/brands/github-alt
   logo: https://fastapi.tiangolo.com/img/icon-white.svg
@@ -40,6 +41,7 @@ nav:
 - Languages:
   - en: /
   - az: /az/
+  - cs: /cs/
   - de: /de/
   - em: /em/
   - es: /es/
@@ -212,6 +214,8 @@ extra:
     name: en - English
   - link: /az/
     name: az
+  - link: /cs/
+    name: cs
   - link: /de/
     name: de
   - link: /em/
@@ -262,3 +266,5 @@ extra_css:
 extra_javascript:
 - https://fastapi.tiangolo.com/js/termynal.js
 - https://fastapi.tiangolo.com/js/custom.js
+hooks:
+- ../../scripts/mkdocs_hooks.py
