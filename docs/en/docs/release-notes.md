@@ -7,8 +7,16 @@ hide:
 
 ## Latest Changes
 
+### Features
+
+* ✨ Add support for Python 3.12. PR [#10666](https://github.com/tiangolo/fastapi/pull/10666) by [@Jamim](https://github.com/Jamim).
+
 ### Docs
 
+* 📝 Add VS Code tutorial link. PR [#10592](https://github.com/tiangolo/fastapi/pull/10592) by [@nilslindemann](https://github.com/nilslindemann).
+* 📝 Add notes about Pydantic v2's new `.model_dump()`. PR [#10929](https://github.com/tiangolo/fastapi/pull/10929) by [@tiangolo](https://github.com/tiangolo).
+* 📝 Fix broken link in `docs/en/docs/tutorial/sql-databases.md`. PR [#10765](https://github.com/tiangolo/fastapi/pull/10765) by [@HurSungYun](https://github.com/HurSungYun).
+* 📝 Add External Link: FastAPI application monitoring made easy. PR [#10917](https://github.com/tiangolo/fastapi/pull/10917) by [@tiangolo](https://github.com/tiangolo).
 * ✨ Generate automatic language names for docs translations. PR [#5354](https://github.com/tiangolo/fastapi/pull/5354) by [@jakul](https://github.com/jakul).
 * ✏️ Fix typos in `docs/en/docs/alternatives.md` and `docs/en/docs/tutorial/dependencies/index.md`. PR [#10906](https://github.com/tiangolo/fastapi/pull/10906) by [@s111d](https://github.com/s111d).
 * ✏️ Fix typos in `docs/en/docs/tutorial/dependencies/dependencies-with-yield.md`. PR [#10834](https://github.com/tiangolo/fastapi/pull/10834) by [@Molkree](https://github.com/Molkree).
@@ -25,6 +33,7 @@ hide:
 
 ### Translations
 
+* 🌐 Add Bengali translation for `docs/bn/docs/index.md`. PR [#9177](https://github.com/tiangolo/fastapi/pull/9177) by [@Fahad-Md-Kamal](https://github.com/Fahad-Md-Kamal).
 * ✏️ Update Python version in `index.md` in several languages. PR [#10711](https://github.com/tiangolo/fastapi/pull/10711) by [@tamago3keran](https://github.com/tamago3keran).
 * 🌐 Add Russian translation for `docs/ru/docs/tutorial/request-forms-and-files.md`. PR [#10347](https://github.com/tiangolo/fastapi/pull/10347) by [@AlertRED](https://github.com/AlertRED).
 * 🌐 Add Ukrainian translation for `docs/uk/docs/index.md`. PR [#10362](https://github.com/tiangolo/fastapi/pull/10362) by [@rostik1410](https://github.com/rostik1410).
