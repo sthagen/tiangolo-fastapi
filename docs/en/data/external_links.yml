@@ -1,5 +1,17 @@
 Articles:
   English:
+  - author: Ankit Anchlia
+    author_link: https://linkedin.com/in/aanchlia21
+    link: https://hackernoon.com/explore-how-to-effectively-use-jwt-with-fastapi
+    title: Explore How to Effectively Use JWT With FastAPI
+  - author: Nicoló Lino
+    author_link: https://www.nlino.com
+    link: https://github.com/softwarebloat/python-tracing-demo
+    title: Instrument a FastAPI service adding tracing with OpenTelemetry and send/show traces in Grafana Tempo
+  - author: Mikhail Rozhkov, Elena Samuylova
+    author_link: https://www.linkedin.com/in/mnrozhkov/
+    link: https://www.evidentlyai.com/blog/fastapi-tutorial
+    title: ML serving and monitoring with FastAPI and Evidently
   - author: Visual Studio Code Team
     author_link: https://code.visualstudio.com/
     link: https://code.visualstudio.com/docs/python/tutorial-fastapi
