@@ -9,6 +9,10 @@ hide:
 
 ### Docs
 
+* 📝 Add warning about lifespan functions and backwards compatibility with events. PR [#10734](https://github.com/tiangolo/fastapi/pull/10734) by [@jacob-indigo](https://github.com/jacob-indigo).
+* ✏️ Fix broken link in `docs/tutorial/sql-databases.md` in several languages. PR [#10716](https://github.com/tiangolo/fastapi/pull/10716) by [@theoohoho](https://github.com/theoohoho).
+* ✏️ Remove broken links from `external_links.yml`. PR [#10943](https://github.com/tiangolo/fastapi/pull/10943) by [@Torabek](https://github.com/Torabek).
+* 📝 Update template docs with more info about `url_for`. PR [#5937](https://github.com/tiangolo/fastapi/pull/5937) by [@EzzEddin](https://github.com/EzzEddin).
 * 📝 Update usage of Token model in security docs. PR [#9313](https://github.com/tiangolo/fastapi/pull/9313) by [@piotrszacilowski](https://github.com/piotrszacilowski).
 * ✏️ Update highlighted line in `docs/en/docs/tutorial/bigger-applications.md`. PR [#5490](https://github.com/tiangolo/fastapi/pull/5490) by [@papb](https://github.com/papb).
 * 📝 Add External Link: Explore How to Effectively Use JWT With FastAPI. PR [#10212](https://github.com/tiangolo/fastapi/pull/10212) by [@aanchlia](https://github.com/aanchlia).
@@ -19,6 +23,13 @@ hide:
 * 📝 Reword in docs, from "have in mind" to "keep in mind". PR [#10376](https://github.com/tiangolo/fastapi/pull/10376) by [@malicious](https://github.com/malicious).
 * 📝 Add External Link: Talk by Jeny Sadadia. PR [#10265](https://github.com/tiangolo/fastapi/pull/10265) by [@JenySadadia](https://github.com/JenySadadia).
 * 📝 Add location info to `tutorial/bigger-applications.md`. PR [#10552](https://github.com/tiangolo/fastapi/pull/10552) by [@nilslindemann](https://github.com/nilslindemann).
+
+### Translations
+
+* 🌐 Add German translation for `docs/de/docs/tutorial/background-tasks.md`. PR [#10566](https://github.com/tiangolo/fastapi/pull/10566) by [@nilslindemann](https://github.com/nilslindemann).
+* ✏️ Fix typo in `docs/ru/docs/index.md`. PR [#10672](https://github.com/tiangolo/fastapi/pull/10672) by [@Delitel-WEB](https://github.com/Delitel-WEB).
+* ✏️ Fix typos in `docs/zh/docs/tutorial/extra-data-types.md`. PR [#10727](https://github.com/tiangolo/fastapi/pull/10727) by [@HiemalBeryl](https://github.com/HiemalBeryl).
+* 🌐 Add Russian translation for `docs/ru/docs/tutorial/dependencies/classes-as-dependencies.md`. PR [#10410](https://github.com/tiangolo/fastapi/pull/10410) by [@AlertRED](https://github.com/AlertRED).
 
 ## 0.109.0
 
