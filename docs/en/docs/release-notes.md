@@ -7,13 +7,20 @@ hide:
 
 ## Latest Changes
 
+* ✏️ Fix Pydantic method name in `docs/en/docs/advanced/path-operation-advanced-configuration.md`. PR [#10826](https://github.com/tiangolo/fastapi/pull/10826) by [@ahmedabdou14](https://github.com/ahmedabdou14).
+
 ### Refactors
 
+* ✅ Refactor tests for duplicate operation ID generation for compatibility with other tools running the FastAPI test suite. PR [#10876](https://github.com/tiangolo/fastapi/pull/10876) by [@emmettbutler](https://github.com/emmettbutler).
+* ♻️ Simplify string format with f-strings in `fastapi/utils.py`. PR [#10576](https://github.com/tiangolo/fastapi/pull/10576) by [@eukub](https://github.com/eukub).
 * 🔧 Fix Ruff configuration unintentionally enabling and re-disabling mccabe complexity check. PR [#10893](https://github.com/tiangolo/fastapi/pull/10893) by [@jiridanek](https://github.com/jiridanek).
 * ✅ Re-enable test in `tests/test_tutorial/test_header_params/test_tutorial003.py` after fix in Starlette. PR [#10904](https://github.com/tiangolo/fastapi/pull/10904) by [@ooknimm](https://github.com/ooknimm).
 
 ### Docs
 
+* ✏️ A few tweaks in `docs/de/docs/tutorial/first-steps.md`. PR [#10959](https://github.com/tiangolo/fastapi/pull/10959) by [@nilslindemann](https://github.com/nilslindemann).
+* ✏️ Fix link in `docs/en/docs/advanced/async-tests.md`. PR [#10960](https://github.com/tiangolo/fastapi/pull/10960) by [@nilslindemann](https://github.com/nilslindemann).
+* ✏️ Fix typos for Spanish documentation. PR [#10957](https://github.com/tiangolo/fastapi/pull/10957) by [@jlopezlira](https://github.com/jlopezlira).
 * 📝 Add warning about lifespan functions and backwards compatibility with events. PR [#10734](https://github.com/tiangolo/fastapi/pull/10734) by [@jacob-indigo](https://github.com/jacob-indigo).
 * ✏️ Fix broken link in `docs/tutorial/sql-databases.md` in several languages. PR [#10716](https://github.com/tiangolo/fastapi/pull/10716) by [@theoohoho](https://github.com/theoohoho).
 * ✏️ Remove broken links from `external_links.yml`. PR [#10943](https://github.com/tiangolo/fastapi/pull/10943) by [@Torabek](https://github.com/Torabek).
@@ -31,6 +38,7 @@ hide:
 
 ### Translations
 
+* 🌐 Add German translation for `docs/de/docs/tutorial/index.md`. PR [#9502](https://github.com/tiangolo/fastapi/pull/9502) by [@fhabers21](https://github.com/fhabers21).
 * 🌐 Add German translation for `docs/de/docs/tutorial/background-tasks.md`. PR [#10566](https://github.com/tiangolo/fastapi/pull/10566) by [@nilslindemann](https://github.com/nilslindemann).
 * ✏️ Fix typo in `docs/ru/docs/index.md`. PR [#10672](https://github.com/tiangolo/fastapi/pull/10672) by [@Delitel-WEB](https://github.com/Delitel-WEB).
 * ✏️ Fix typos in `docs/zh/docs/tutorial/extra-data-types.md`. PR [#10727](https://github.com/tiangolo/fastapi/pull/10727) by [@HiemalBeryl](https://github.com/HiemalBeryl).
