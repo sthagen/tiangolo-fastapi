@@ -49,6 +49,17 @@ hide:
 
 ### Translations
 
+* 🌐 Add Japanese translation for `docs/ja/docs/tutorial/security/get-current-user.md`. PR [#2681](https://github.com/tiangolo/fastapi/pull/2681) by [@sh0nk](https://github.com/sh0nk).
+* 🌐 Add Chinese translation for `docs/zh/docs/advanced/advanced-dependencies.md`. PR [#3798](https://github.com/tiangolo/fastapi/pull/3798) by [@jaystone776](https://github.com/jaystone776).
+* 🌐 Add Chinese translation for `docs/zh/docs/advanced/events.md`. PR [#3815](https://github.com/tiangolo/fastapi/pull/3815) by [@jaystone776](https://github.com/jaystone776).
+* 🌐 Add Chinese translation for `docs/zh/docs/advanced/behind-a-proxy.md`. PR [#3820](https://github.com/tiangolo/fastapi/pull/3820) by [@jaystone776](https://github.com/jaystone776).
+* 🌐 Add Chinese translation for `docs/zh/docs/advanced/testing-events.md`. PR [#3818](https://github.com/tiangolo/fastapi/pull/3818) by [@jaystone776](https://github.com/jaystone776).
+* 🌐 Add Chinese translation for `docs/zh/docs/advanced/testing-websockets.md`. PR [#3817](https://github.com/tiangolo/fastapi/pull/3817) by [@jaystone776](https://github.com/jaystone776).
+* 🌐 Add Chinese translation for `docs/zh/docs/advanced/testing-database.md`. PR [#3821](https://github.com/tiangolo/fastapi/pull/3821) by [@jaystone776](https://github.com/jaystone776).
+* 🌐 Add Chinese translation for `docs/zh/docs/deployment/deta.md`. PR [#3837](https://github.com/tiangolo/fastapi/pull/3837) by [@jaystone776](https://github.com/jaystone776).
+* 🌐 Add Chinese translation for `docs/zh/docs/history-design-future.md`. PR [#3832](https://github.com/tiangolo/fastapi/pull/3832) by [@jaystone776](https://github.com/jaystone776).
+* 🌐 Add Chinese translation for `docs/zh/docs/project-generation.md`. PR [#3831](https://github.com/tiangolo/fastapi/pull/3831) by [@jaystone776](https://github.com/jaystone776).
+* 🌐 Add Chinese translation for `docs/zh/docs/deployment/docker.md`. PR [#10296](https://github.com/tiangolo/fastapi/pull/10296) by [@xzmeng](https://github.com/xzmeng).
 * 🌐 Update Spanish translation for `docs/es/docs/features.md`. PR [#10884](https://github.com/tiangolo/fastapi/pull/10884) by [@pablocm83](https://github.com/pablocm83).
 * 🌐 Add Spanish translation for `docs/es/docs/newsletter.md`. PR [#10922](https://github.com/tiangolo/fastapi/pull/10922) by [@pablocm83](https://github.com/pablocm83).
 * 🌐 Add Korean translation for `docs/ko/docs/tutorial/background-tasks.md`. PR [#5910](https://github.com/tiangolo/fastapi/pull/5910) by [@junah201](https://github.com/junah201).
