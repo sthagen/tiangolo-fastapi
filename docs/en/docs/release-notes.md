@@ -7,6 +7,12 @@ hide:
 
 ## Latest Changes
 
+### Docs
+
+* 🛠️ Improve Node.js script in docs to generate TypeScript clients. PR [#11293](https://github.com/tiangolo/fastapi/pull/11293) by [@alejsdev](https://github.com/alejsdev).
+* 📝 Update examples for tests to replace "inexistent" for "nonexistent". PR [#11220](https://github.com/tiangolo/fastapi/pull/11220) by [@Homesteady](https://github.com/Homesteady).
+* 📝 Update `python-multipart` GitHub link in all docs from `https://andrew-d.github.io/python-multipart/` to `https://github.com/Kludex/python-multipart`. PR [#11239](https://github.com/tiangolo/fastapi/pull/11239) by [@joshjhans](https://github.com/joshjhans).
+
 ### Translations
 
 * 🌐 Update Chinese translation for `docs/zh/docs/contributing.md`. PR [#10887](https://github.com/tiangolo/fastapi/pull/10887) by [@Aruelius](https://github.com/Aruelius).
@@ -17,6 +23,7 @@ hide:
 
 ### Internal
 
+* 🔥 Remove Jina AI QA Bot from the docs. PR [#11268](https://github.com/tiangolo/fastapi/pull/11268) by [@nan-wang](https://github.com/nan-wang).
 * 🔧 Update sponsors, remove Jina, remove Powens, move TestDriven.io. PR [#11213](https://github.com/tiangolo/fastapi/pull/11213) by [@tiangolo](https://github.com/tiangolo).
 
 ## 0.110.0
