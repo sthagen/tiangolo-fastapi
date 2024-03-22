@@ -9,6 +9,10 @@ hide:
 
 ### Docs
 
+* 📝 Update links to Pydantic docs to point to new website. PR [#11328](https://github.com/tiangolo/fastapi/pull/11328) by [@alejsdev](https://github.com/alejsdev).
+* ✏️ Fix typo in `docs/en/docs/tutorial/extra-models.md`. PR [#11329](https://github.com/tiangolo/fastapi/pull/11329) by [@alejsdev](https://github.com/alejsdev).
+* 📝 Update `project-generation.md`. PR [#11326](https://github.com/tiangolo/fastapi/pull/11326) by [@alejsdev](https://github.com/alejsdev).
+* 📝 Update External Links. PR [#11327](https://github.com/tiangolo/fastapi/pull/11327) by [@alejsdev](https://github.com/alejsdev).
 * 🔥 Remove link to Pydantic's benchmark, on other i18n pages.. PR [#11224](https://github.com/tiangolo/fastapi/pull/11224) by [@hirotoKirimaru](https://github.com/hirotoKirimaru).
 * ✏️ Fix typos in docstrings. PR [#11295](https://github.com/tiangolo/fastapi/pull/11295) by [@davidhuser](https://github.com/davidhuser).
 * 🛠️ Improve Node.js script in docs to generate TypeScript clients. PR [#11293](https://github.com/tiangolo/fastapi/pull/11293) by [@alejsdev](https://github.com/alejsdev).
@@ -3483,7 +3487,7 @@ Note: all the previous parameters are still there, so it's still possible to dec
 
 * Upgrade Pydantic supported version to `0.29.0`.
     * New supported version range is `"pydantic >=0.28,<=0.29.0"`.
-    * This adds support for Pydantic [Generic Models](https://pydantic-docs.helpmanual.io/#generic-models), kudos to [@dmontagu](https://github.com/dmontagu).
+    * This adds support for Pydantic [Generic Models](https://docs.pydantic.dev/latest/#generic-models), kudos to [@dmontagu](https://github.com/dmontagu).
     * PR [#344](https://github.com/tiangolo/fastapi/pull/344).
 
 ## 0.30.1
