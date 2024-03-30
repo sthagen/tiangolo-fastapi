@@ -9,6 +9,7 @@ hide:
 
 ### Docs
 
+* ✏️ Fix typo in `fastapi/security/oauth2.py`. PR [#11368](https://github.com/tiangolo/fastapi/pull/11368) by [@shandongbinzhou](https://github.com/shandongbinzhou).
 * 📝 Update links to Pydantic docs to point to new website. PR [#11328](https://github.com/tiangolo/fastapi/pull/11328) by [@alejsdev](https://github.com/alejsdev).
 * ✏️ Fix typo in `docs/en/docs/tutorial/extra-models.md`. PR [#11329](https://github.com/tiangolo/fastapi/pull/11329) by [@alejsdev](https://github.com/alejsdev).
 * 📝 Update `project-generation.md`. PR [#11326](https://github.com/tiangolo/fastapi/pull/11326) by [@alejsdev](https://github.com/alejsdev).
@@ -36,6 +37,8 @@ hide:
 
 ### Internal
 
+* 👷 Disable MkDocs insiders social plugin while an issue in MkDocs Material is handled. PR [#11373](https://github.com/tiangolo/fastapi/pull/11373) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Fix logic for when to install and use MkDocs Insiders. PR [#11372](https://github.com/tiangolo/fastapi/pull/11372) by [@tiangolo](https://github.com/tiangolo).
 * 👷 Do not use Python packages cache for publish. PR [#11366](https://github.com/tiangolo/fastapi/pull/11366) by [@tiangolo](https://github.com/tiangolo).
 * 👷 Add CI to test sdists for redistribution (e.g. Linux distros). PR [#11365](https://github.com/tiangolo/fastapi/pull/11365) by [@tiangolo](https://github.com/tiangolo).
 * 👷 Update build-docs GitHub Action path filter. PR [#11354](https://github.com/tiangolo/fastapi/pull/11354) by [@tiangolo](https://github.com/tiangolo).
