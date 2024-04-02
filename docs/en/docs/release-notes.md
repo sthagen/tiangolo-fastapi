@@ -7,9 +7,31 @@ hide:
 
 ## Latest Changes
 
+### Translations
+
+* 🌐 Add Japanese translation for `docs/ja/docs/tutorial/path-operation-configuration.md`. PR [#1954](https://github.com/tiangolo/fastapi/pull/1954) by [@SwftAlpc](https://github.com/SwftAlpc).
+* 🌐 Add Japanese translation for `docs/ja/docs/tutorial/request-forms-and-files.md`. PR [#1946](https://github.com/tiangolo/fastapi/pull/1946) by [@SwftAlpc](https://github.com/SwftAlpc).
+* 🌐 Add Russian translation for `docs/ru/docs/tutorial/dependencies/dependencies-with-yield.md`. PR [#10532](https://github.com/tiangolo/fastapi/pull/10532) by [@AlertRED](https://github.com/AlertRED).
+* 🌐 Add Korean translation for `docs/ko/docs/tutorial/debugging.md`. PR [#5695](https://github.com/tiangolo/fastapi/pull/5695) by [@JungWooGeon](https://github.com/JungWooGeon).
+
+### Internal
+
+* ⬆️ Upgrade version of typer for docs. PR [#11393](https://github.com/tiangolo/fastapi/pull/11393) by [@tiangolo](https://github.com/tiangolo).
+
+## 0.110.1
+
+### Fixes
+
+* 🐛 Fix parameterless `Depends()` with generics. PR [#9479](https://github.com/tiangolo/fastapi/pull/9479) by [@nzig](https://github.com/nzig).
+
 ### Refactors
 
+* ♻️ Update mypy. PR [#11049](https://github.com/tiangolo/fastapi/pull/11049) by [@k0t3n](https://github.com/k0t3n).
 * ♻️ Simplify string format with f-strings in `fastapi/applications.py`. PR [#11335](https://github.com/tiangolo/fastapi/pull/11335) by [@igeni](https://github.com/igeni).
+
+### Upgrades
+
+* ⬆️ Upgrade Starlette to >=0.37.2,<0.38.0, remove Starlette filterwarning for internal tests. PR [#11266](https://github.com/tiangolo/fastapi/pull/11266) by [@nothielf](https://github.com/nothielf).
 
 ### Docs
 
@@ -27,6 +49,7 @@ hide:
 
 ### Translations
 
+* 🌐 Add German translation for `docs/de/docs/tutorial/response-status-code.md`. PR [#10357](https://github.com/tiangolo/fastapi/pull/10357) by [@nilslindemann](https://github.com/nilslindemann).
 * 🌐 Update Chinese translation for `docs/zh/docs/tutorial/query-params.md`. PR [#3480](https://github.com/tiangolo/fastapi/pull/3480) by [@jaystone776](https://github.com/jaystone776).
 * 🌐 Update Chinese translation for `docs/zh/docs/tutorial/body.md`. PR [#3481](https://github.com/tiangolo/fastapi/pull/3481) by [@jaystone776](https://github.com/jaystone776).
 * 🌐 Update Chinese translation for `docs/zh/docs/tutorial/path-params.md`. PR [#3479](https://github.com/tiangolo/fastapi/pull/3479) by [@jaystone776](https://github.com/jaystone776).
@@ -162,6 +185,13 @@ hide:
 
 ### Internal
 
+* 👥 Update FastAPI People. PR [#11387](https://github.com/tiangolo/fastapi/pull/11387) by [@tiangolo](https://github.com/tiangolo).
+* ⬆ Bump actions/cache from 3 to 4. PR [#10988](https://github.com/tiangolo/fastapi/pull/10988) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pypa/gh-action-pypi-publish from 1.8.11 to 1.8.14. PR [#11318](https://github.com/tiangolo/fastapi/pull/11318) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pillow from 10.1.0 to 10.2.0. PR [#11011](https://github.com/tiangolo/fastapi/pull/11011) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump black from 23.3.0 to 24.3.0. PR [#11325](https://github.com/tiangolo/fastapi/pull/11325) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* 👷 Add cron to run test once a week on monday. PR [#11377](https://github.com/tiangolo/fastapi/pull/11377) by [@estebanx64](https://github.com/estebanx64).
+* ➕ Replace mkdocs-markdownextradata-plugin with mkdocs-macros-plugin. PR [#11383](https://github.com/tiangolo/fastapi/pull/11383) by [@tiangolo](https://github.com/tiangolo).
 * 👷 Disable MkDocs insiders social plugin while an issue in MkDocs Material is handled. PR [#11373](https://github.com/tiangolo/fastapi/pull/11373) by [@tiangolo](https://github.com/tiangolo).
 * 👷 Fix logic for when to install and use MkDocs Insiders. PR [#11372](https://github.com/tiangolo/fastapi/pull/11372) by [@tiangolo](https://github.com/tiangolo).
 * 👷 Do not use Python packages cache for publish. PR [#11366](https://github.com/tiangolo/fastapi/pull/11366) by [@tiangolo](https://github.com/tiangolo).
