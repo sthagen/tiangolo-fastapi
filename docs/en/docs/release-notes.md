@@ -5,11 +5,13 @@ hide:
 
 # Release Notes
 
+## 0.110.3
+
 ## Latest Changes
 
-### Upgrades
+### Refactors
 
-* ⬆ Bump mkdocstrings[python] from 0.23.0 to 0.24.3. PR [#11469](https://github.com/tiangolo/fastapi/pull/11469) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* 🔧 Add configs and setup for `fastapi-slim` including optional extras `fastapi-slim[standard]`, and `fastapi` including by default the same `standard` extras. PR [#11503](https://github.com/tiangolo/fastapi/pull/11503) by [@tiangolo](https://github.com/tiangolo).
 
 ### Docs
 
@@ -26,6 +28,9 @@ hide:
 
 ### Internal
 
+* ⬆ Bump mkdocstrings[python] from 0.23.0 to 0.24.3. PR [#11469](https://github.com/tiangolo/fastapi/pull/11469) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* 🔨 Update internal scripts and remove unused ones. PR [#11499](https://github.com/tiangolo/fastapi/pull/11499) by [@tiangolo](https://github.com/tiangolo).
+* 🔧 Migrate from Hatch to PDM for the internal build. PR [#11498](https://github.com/tiangolo/fastapi/pull/11498) by [@tiangolo](https://github.com/tiangolo).
 * ⬆️ Upgrade MkDocs Material and re-enable cards. PR [#11466](https://github.com/tiangolo/fastapi/pull/11466) by [@tiangolo](https://github.com/tiangolo).
 * ⬆ Bump pillow from 10.2.0 to 10.3.0. PR [#11403](https://github.com/tiangolo/fastapi/pull/11403) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * 🔧 Ungroup dependabot updates. PR [#11465](https://github.com/tiangolo/fastapi/pull/11465) by [@tiangolo](https://github.com/tiangolo).
