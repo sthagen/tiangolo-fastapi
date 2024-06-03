@@ -15,6 +15,9 @@ hide:
 
 ### Docs
 
+* 📝 Update `security/first-steps.md`. PR [#11674](https://github.com/tiangolo/fastapi/pull/11674) by [@alejsdev](https://github.com/alejsdev).
+* 📝 Update `security/first-steps.md`. PR [#11673](https://github.com/tiangolo/fastapi/pull/11673) by [@alejsdev](https://github.com/alejsdev).
+* 📝 Update note in `path-params-numeric-validations.md`. PR [#11672](https://github.com/tiangolo/fastapi/pull/11672) by [@alejsdev](https://github.com/alejsdev).
 * 📝 Tweak intro docs about `Annotated` and `Query()` params. PR [#11664](https://github.com/tiangolo/fastapi/pull/11664) by [@tiangolo](https://github.com/tiangolo).
 * 📝 Update JWT auth documentation to use PyJWT instead of pyhon-jose. PR [#11589](https://github.com/tiangolo/fastapi/pull/11589) by [@estebanx64](https://github.com/estebanx64).
 * 📝 Update docs. PR [#11603](https://github.com/tiangolo/fastapi/pull/11603) by [@alejsdev](https://github.com/alejsdev).
@@ -41,6 +44,7 @@ hide:
 
 ### Internal
 
+* 👥 Update FastAPI People. PR [#11669](https://github.com/tiangolo/fastapi/pull/11669) by [@tiangolo](https://github.com/tiangolo).
 * 🔧 Add sponsor Kong. PR [#11662](https://github.com/tiangolo/fastapi/pull/11662) by [@tiangolo](https://github.com/tiangolo).
 * 👷 Update Smokeshow, fix sync download artifact and smokeshow configs. PR [#11563](https://github.com/tiangolo/fastapi/pull/11563) by [@tiangolo](https://github.com/tiangolo).
 * 👷 Update Smokeshow download artifact GitHub Action. PR [#11562](https://github.com/tiangolo/fastapi/pull/11562) by [@tiangolo](https://github.com/tiangolo).
