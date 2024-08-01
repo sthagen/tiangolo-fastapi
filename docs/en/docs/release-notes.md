@@ -18,6 +18,7 @@ hide:
 
 ### Translations
 
+* 🌐 Update Portuguese translation for `docs/pt/docs/alternatives.md`. PR [#11931](https://github.com/fastapi/fastapi/pull/11931) by [@ceb10n](https://github.com/ceb10n).
 * 🌐 Add Russian translation for `docs/ru/docs/tutorial/dependencies/sub-dependencies.md`. PR [#10515](https://github.com/tiangolo/fastapi/pull/10515) by [@AlertRED](https://github.com/AlertRED).
 * 🌐 Add Portuguese translation for `docs/pt/docs/advanced/response-change-status-code.md`. PR [#11863](https://github.com/tiangolo/fastapi/pull/11863) by [@ceb10n](https://github.com/ceb10n).
 * 🌐 Add Portuguese translation for `docs/pt/docs/reference/background.md`. PR [#11849](https://github.com/tiangolo/fastapi/pull/11849) by [@lucasbalieiro](https://github.com/lucasbalieiro).
@@ -26,6 +27,9 @@ hide:
 
 ### Internal
 
+* 🔧 Update sponsors: add liblab. PR [#11934](https://github.com/fastapi/fastapi/pull/11934) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Update GitHub Action label-approved permissions. PR [#11933](https://github.com/fastapi/fastapi/pull/11933) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Refactor GitHub Action to comment docs deployment URLs and update token. PR [#11925](https://github.com/fastapi/fastapi/pull/11925) by [@tiangolo](https://github.com/tiangolo).
 * 👷 Update tokens for GitHub Actions. PR [#11924](https://github.com/fastapi/fastapi/pull/11924) by [@tiangolo](https://github.com/tiangolo).
 * 👷 Update token permissions to comment deployment URL in docs. PR [#11917](https://github.com/fastapi/fastapi/pull/11917) by [@tiangolo](https://github.com/tiangolo).
 * 👷 Update token permissions for GitHub Actions. PR [#11915](https://github.com/fastapi/fastapi/pull/11915) by [@tiangolo](https://github.com/tiangolo).
