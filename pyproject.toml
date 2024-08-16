@@ -50,6 +50,8 @@ dependencies = [
 Homepage = "https://github.com/fastapi/fastapi"
 Documentation = "https://fastapi.tiangolo.com/"
 Repository = "https://github.com/fastapi/fastapi"
+Issues = "https://github.com/fastapi/fastapi/issues"
+Changelog = "https://fastapi.tiangolo.com/release-notes/"
 
 [project.optional-dependencies]
 
@@ -182,6 +184,7 @@ source = [
     "fastapi"
 ]
 context = '${CONTEXT}'
+dynamic_context = "test_function"
 omit = [
     "docs_src/response_model/tutorial003_04.py",
     "docs_src/response_model/tutorial003_04_py310.py",
