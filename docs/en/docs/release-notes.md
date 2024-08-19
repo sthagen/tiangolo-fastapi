@@ -14,6 +14,8 @@ hide:
 
 ### Docs
 
+* 📝 Add Asyncer mention in async docs. PR [#12037](https://github.com/fastapi/fastapi/pull/12037) by [@tiangolo](https://github.com/tiangolo).
+* 📝 Move the Features docs to the top level to improve the main page menu. PR [#12036](https://github.com/fastapi/fastapi/pull/12036) by [@tiangolo](https://github.com/tiangolo).
 * ✏️ Fix import typo in reference example for `Security`. PR [#11168](https://github.com/fastapi/fastapi/pull/11168) by [@0shah0](https://github.com/0shah0).
 * 📝 Highlight correct line in tutorial `docs/en/docs/tutorial/body-multiple-params.md`. PR [#11978](https://github.com/fastapi/fastapi/pull/11978) by [@svlandeg](https://github.com/svlandeg).
 * 🔥 Remove Sentry link from Advanced Middleware docs. PR [#12031](https://github.com/fastapi/fastapi/pull/12031) by [@alejsdev](https://github.com/alejsdev).
@@ -34,6 +36,7 @@ hide:
 
 ### Internal
 
+* 🔧 Update coverage config files. PR [#12035](https://github.com/fastapi/fastapi/pull/12035) by [@tiangolo](https://github.com/tiangolo).
 * 🔨 Standardize shebang across shell scripts. PR [#11942](https://github.com/fastapi/fastapi/pull/11942) by [@gitworkflows](https://github.com/gitworkflows).
 * ⬆ Update sqlalchemy requirement from <1.4.43,>=1.3.18 to >=1.3.18,<2.0.33. PR [#11979](https://github.com/fastapi/fastapi/pull/11979) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * 🔊 Remove old ignore warnings. PR [#11950](https://github.com/fastapi/fastapi/pull/11950) by [@tiangolo](https://github.com/tiangolo).
