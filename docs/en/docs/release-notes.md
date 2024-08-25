@@ -7,6 +7,20 @@ hide:
 
 ## Latest Changes
 
+### Docs
+
+* 📝 Update docs about serving FastAPI: ASGI servers, Docker containers, etc.. PR [#12069](https://github.com/fastapi/fastapi/pull/12069) by [@tiangolo](https://github.com/tiangolo).
+* 📝 Clarify `response_class` parameter, validations, and returning a response directly. PR [#12067](https://github.com/fastapi/fastapi/pull/12067) by [@tiangolo](https://github.com/tiangolo).
+* 📝 Fix minor typos and issues in the documentation. PR [#12063](https://github.com/fastapi/fastapi/pull/12063) by [@svlandeg](https://github.com/svlandeg).
+* 📝 Add note in Docker docs about ensuring graceful shutdowns and lifespan events with `CMD` exec form. PR [#11960](https://github.com/fastapi/fastapi/pull/11960) by [@GPla](https://github.com/GPla).
+
+## 0.112.2
+
+### Fixes
+
+* 🐛 Fix `allow_inf_nan` option for Param and Body classes. PR [#11867](https://github.com/fastapi/fastapi/pull/11867) by [@giunio-prc](https://github.com/giunio-prc).
+* 🐛 Ensure that `app.include_router` merges nested lifespans. PR [#9630](https://github.com/fastapi/fastapi/pull/9630) by [@Lancetnik](https://github.com/Lancetnik).
+
 ### Refactors
 
 * 🎨 Fix typing annotation for semi-internal `FastAPI.add_api_route()`. PR [#10240](https://github.com/fastapi/fastapi/pull/10240) by [@ordinary-jamie](https://github.com/ordinary-jamie).
