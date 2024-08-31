@@ -9,6 +9,8 @@ hide:
 
 ### Docs
 
+* 📝 Add note about `time.perf_counter()` in middlewares. PR [#12095](https://github.com/fastapi/fastapi/pull/12095) by [@tiangolo](https://github.com/tiangolo).
+* 📝 Tweak middleware code sample `time.time()` to `time.perf_counter()`. PR [#11957](https://github.com/fastapi/fastapi/pull/11957) by [@domdent](https://github.com/domdent).
 * 🔧 Update sponsors: Coherence. PR [#12093](https://github.com/fastapi/fastapi/pull/12093) by [@tiangolo](https://github.com/tiangolo).
 * 📝 Fix async test example not to trigger DeprecationWarning. PR [#12084](https://github.com/fastapi/fastapi/pull/12084) by [@marcinsulikowski](https://github.com/marcinsulikowski).
 * 📝 Update `docs_src/path_params_numeric_validations/tutorial006.py`. PR [#11478](https://github.com/fastapi/fastapi/pull/11478) by [@MuhammadAshiqAmeer](https://github.com/MuhammadAshiqAmeer).
@@ -25,6 +27,7 @@ hide:
 
 ### Internal
 
+* 🔧 Update labeler config to handle sponsorships data. PR [#12096](https://github.com/fastapi/fastapi/pull/12096) by [@tiangolo](https://github.com/tiangolo).
 * 🔧 Update sponsors, remove Kong. PR [#12085](https://github.com/fastapi/fastapi/pull/12085) by [@tiangolo](https://github.com/tiangolo).
 * ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#12076](https://github.com/fastapi/fastapi/pull/12076) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
 * 👷 Update `latest-changes` GitHub Action. PR [#12073](https://github.com/fastapi/fastapi/pull/12073) by [@tiangolo](https://github.com/tiangolo).
