@@ -7,6 +7,54 @@ hide:
 
 ## Latest Changes
 
+## 0.113.0
+
+Now you can declare form fields with Pydantic models:
+
+```python
+from typing import Annotated
+
+from fastapi import FastAPI, Form
+from pydantic import BaseModel
+
+app = FastAPI()
+
+
+class FormData(BaseModel):
+    username: str
+    password: str
+
+
+@app.post("/login/")
+async def login(data: Annotated[FormData, Form()]):
+    return data
+```
+
+Read the new docs: [Form Models](https://fastapi.tiangolo.com/tutorial/request-form-models/).
+
+### Features
+
+* ✨ Add support for Pydantic models in `Form` parameters. PR [#12129](https://github.com/fastapi/fastapi/pull/12129) by [@tiangolo](https://github.com/tiangolo).
+
+### Internal
+
+* 🔧 Update sponsors: Coherence link. PR [#12130](https://github.com/fastapi/fastapi/pull/12130) by [@tiangolo](https://github.com/tiangolo).
+
+## 0.112.4
+
+This release is mainly a big internal refactor to enable adding support for Pydantic models for `Form` fields, but that feature comes in the next release.
+
+This release shouldn't affect apps using FastAPI in any way. You don't even have to upgrade to this version yet. It's just a checkpoint. 🤓
+
+### Refactors
+
+* ♻️ Refactor deciding if `embed` body fields, do not overwrite fields, compute once per router, refactor internals in preparation for Pydantic models in `Form`, `Query` and others. PR [#12117](https://github.com/fastapi/fastapi/pull/12117) by [@tiangolo](https://github.com/tiangolo).
+
+### Internal
+
+* ⏪️ Temporarily revert "✨ Add support for Pydantic models in `Form` parameters" to make a checkpoint release. PR [#12128](https://github.com/fastapi/fastapi/pull/12128) by [@tiangolo](https://github.com/tiangolo). Restored by PR [#12129](https://github.com/fastapi/fastapi/pull/12129).
+* ✨ Add support for Pydantic models in `Form` parameters. PR [#12127](https://github.com/fastapi/fastapi/pull/12127) by [@tiangolo](https://github.com/tiangolo). Reverted by PR [#12128](https://github.com/fastapi/fastapi/pull/12128) to make a checkpoint release with only refactors. Restored by PR [#12129](https://github.com/fastapi/fastapi/pull/12129).
+
 ## 0.112.3
 
 This release is mainly internal refactors, it shouldn't affect apps using FastAPI in any way. You don't even have to upgrade to this version yet. There are a few bigger releases coming right after. 🚀
