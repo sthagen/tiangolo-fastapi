@@ -27,6 +27,7 @@ hide:
 
 ### Translations
 
+* 🌐 Add Portuguese translation for `docs/pt/docs/advanced/path-operation-advanced-configuration.md`. PR [#12762](https://github.com/fastapi/fastapi/pull/12762) by [@Joao-Pedro-P-Holanda](https://github.com/Joao-Pedro-P-Holanda).
 * 🌐 Add Korean translation for `docs/ko/docs/advanced/wsgi.md`. PR [#12659](https://github.com/fastapi/fastapi/pull/12659) by [@Limsunoh](https://github.com/Limsunoh).
 * 🌐 Add Portuguese translation for `docs/pt/docs/advanced/websockets.md`. PR [#12703](https://github.com/fastapi/fastapi/pull/12703) by [@devfernandoa](https://github.com/devfernandoa).
 * 🌐 Add Portuguese translation for `docs/pt/docs/tutorial/security/simple-oauth2.md`. PR [#12520](https://github.com/fastapi/fastapi/pull/12520) by [@LidiaDomingos](https://github.com/LidiaDomingos).
@@ -43,6 +44,9 @@ hide:
 
 ### Internal
 
+* ⬆ Bump pypa/gh-action-pypi-publish from 1.11.0 to 1.12.0. PR [#12781](https://github.com/fastapi/fastapi/pull/12781) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump cloudflare/wrangler-action from 3.11 to 3.12. PR [#12777](https://github.com/fastapi/fastapi/pull/12777) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#12766](https://github.com/fastapi/fastapi/pull/12766) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
 * ⬆ Bump pypa/gh-action-pypi-publish from 1.10.3 to 1.11.0. PR [#12721](https://github.com/fastapi/fastapi/pull/12721) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Update pre-commit requirement from <4.0.0,>=2.17.0 to >=2.17.0,<5.0.0. PR [#12749](https://github.com/fastapi/fastapi/pull/12749) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump typer from 0.12.3 to 0.12.5. PR [#12748](https://github.com/fastapi/fastapi/pull/12748) by [@dependabot[bot]](https://github.com/apps/dependabot).
