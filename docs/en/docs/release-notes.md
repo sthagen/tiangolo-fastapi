@@ -9,6 +9,31 @@ hide:
 
 ### Docs
 
+* 📝 Update includes in `docs/en/docs/tutorial/path-params.md`. PR [#12811](https://github.com/fastapi/fastapi/pull/12811) by [@AlexWendland](https://github.com/AlexWendland).
+* 📝 Update includes in `docs/en/docs/tutorial/response-model.md`. PR [#12621](https://github.com/fastapi/fastapi/pull/12621) by [@kantandane](https://github.com/kantandane).
+* 📝 Update includes in `docs/en/docs/advanced/websockets.md`. PR [#12606](https://github.com/fastapi/fastapi/pull/12606) by [@vishnuvskvkl](https://github.com/vishnuvskvkl).
+* 📝 Updates include for `docs/en/docs/tutorial/cookie-params.md`. PR [#12808](https://github.com/fastapi/fastapi/pull/12808) by [@handabaldeep](https://github.com/handabaldeep).
+* 📝 Update includes in `docs/en/docs/tutorial/middleware.md`. PR [#12807](https://github.com/fastapi/fastapi/pull/12807) by [@AlexWendland](https://github.com/AlexWendland).
+* 📝 Update includes in `docs/en/docs/advanced/sub-applications.md`. PR [#12806](https://github.com/fastapi/fastapi/pull/12806) by [@zhaohan-dong](https://github.com/zhaohan-dong).
+* 📝 Update includes in `docs/en/docs/advanced/response-headers.md`. PR [#12805](https://github.com/fastapi/fastapi/pull/12805) by [@zhaohan-dong](https://github.com/zhaohan-dong).
+* 📝 Update includes in `docs/fr/docs/tutorial/first-steps.md`. PR [#12594](https://github.com/fastapi/fastapi/pull/12594) by [@kantandane](https://github.com/kantandane).
+* 📝 Update includes in `docs/en/docs/advanced/response-cookies.md`. PR [#12804](https://github.com/fastapi/fastapi/pull/12804) by [@zhaohan-dong](https://github.com/zhaohan-dong).
+* 📝 Update includes in `docs/en/docs/advanced/path-operation-advanced-configuration.md`. PR [#12802](https://github.com/fastapi/fastapi/pull/12802) by [@zhaohan-dong](https://github.com/zhaohan-dong).
+* 📝 Update includes for `docs/en/docs/advanced/response-directly.md`. PR [#12803](https://github.com/fastapi/fastapi/pull/12803) by [@handabaldeep](https://github.com/handabaldeep).
+* 📝 Update includes in `docs/zh/docs/tutorial/background-tasks.md`. PR [#12798](https://github.com/fastapi/fastapi/pull/12798) by [@zhaohan-dong](https://github.com/zhaohan-dong).
+* 📝 Update includes for `docs/de/docs/tutorial/body-multiple-params.md`. PR [#12699](https://github.com/fastapi/fastapi/pull/12699) by [@alissadb](https://github.com/alissadb).
+* 📝 Update includes in `docs/em/docs/tutorial/body-updates.md`. PR [#12799](https://github.com/fastapi/fastapi/pull/12799) by [@AlexWendland](https://github.com/AlexWendland).
+* 📝 Update includes `docs/en/docs/advanced/response-change-status-code.md`. PR [#12801](https://github.com/fastapi/fastapi/pull/12801) by [@handabaldeep](https://github.com/handabaldeep).
+* 📝 Update includes `docs/en/docs/advanced/openapi-callbacks.md`. PR [#12800](https://github.com/fastapi/fastapi/pull/12800) by [@handabaldeep](https://github.com/handabaldeep).
+* 📝  Update includes in `docs/fr/docs/tutorial/body-multiple-params.md`. PR [#12598](https://github.com/fastapi/fastapi/pull/12598) by [@kantandane](https://github.com/kantandane).
+* 📝 Update includes in `docs/en/docs/tutorial/body-multiple-params.md`. PR [#12593](https://github.com/fastapi/fastapi/pull/12593) by [@Tashanam-Shahbaz](https://github.com/Tashanam-Shahbaz).
+* 📝 Update includes in `docs/pt/docs/tutorial/background-tasks.md`. PR [#12736](https://github.com/fastapi/fastapi/pull/12736) by [@bhunao](https://github.com/bhunao).
+* 📝 Update includes for `docs/en/docs/advanced/custom-response.md`. PR [#12797](https://github.com/fastapi/fastapi/pull/12797) by [@handabaldeep](https://github.com/handabaldeep).
+* 📝 Update includes for `docs/pt/docs/python-types.md`. PR [#12671](https://github.com/fastapi/fastapi/pull/12671) by [@ceb10n](https://github.com/ceb10n).
+* 📝 Update includes for `docs/de/docs/python-types.md`. PR [#12660](https://github.com/fastapi/fastapi/pull/12660) by [@alissadb](https://github.com/alissadb).
+* 📝 Update includes for `docs/de/docs/advanced/dataclasses.md`. PR [#12658](https://github.com/fastapi/fastapi/pull/12658) by [@alissadb](https://github.com/alissadb).
+* 📝 Update includes in `docs/fr/docs/tutorial/path-params.md`. PR [#12592](https://github.com/fastapi/fastapi/pull/12592) by [@kantandane](https://github.com/kantandane).
+* 📝 Update includes for `docs/de/docs/how-to/configure-swagger-ui.md`. PR [#12690](https://github.com/fastapi/fastapi/pull/12690) by [@alissadb](https://github.com/alissadb).
 * 📝 Update includes in `docs/en/docs/advanced/security/oauth2-scopes.md`. PR [#12572](https://github.com/fastapi/fastapi/pull/12572) by [@krishnamadhavan](https://github.com/krishnamadhavan).
 * 📝 Update includes for `docs/en/docs/how-to/conditional-openapi.md`. PR [#12624](https://github.com/fastapi/fastapi/pull/12624) by [@rabinlamadong](https://github.com/rabinlamadong).
 * 📝 Update includes in `docs/en/docs/tutorial/dependencies/index.md`. PR [#12615](https://github.com/fastapi/fastapi/pull/12615) by [@bharara](https://github.com/bharara).
@@ -27,6 +52,9 @@ hide:
 
 ### Translations
 
+* 🌐 Add Korean translation for `docs/ko/docs/advanced/testing-websockets.md`. PR [#12739](https://github.com/fastapi/fastapi/pull/12739) by [@Limsunoh](https://github.com/Limsunoh).
+* 🌐 Add Traditional Chinese translation for `docs/zh-hant/docs/environment-variables.md`. PR [#12785](https://github.com/fastapi/fastapi/pull/12785) by [@Vincy1230](https://github.com/Vincy1230).
+* 🌐 Add Chinese translation for `docs/zh/docs/environment-variables.md`. PR [#12784](https://github.com/fastapi/fastapi/pull/12784) by [@Vincy1230](https://github.com/Vincy1230).
 * 🌐 Add Korean translation for `ko/docs/advanced/response-headers.md`. PR [#12740](https://github.com/fastapi/fastapi/pull/12740) by [@kwang1215](https://github.com/kwang1215).
 * 🌐 Add Chinese translation for `docs/zh/docs/virtual-environments.md`. PR [#12790](https://github.com/fastapi/fastapi/pull/12790) by [@Vincy1230](https://github.com/Vincy1230).
 * 🌐 Add Korean translation for `/docs/ko/docs/environment-variables.md`. PR [#12526](https://github.com/fastapi/fastapi/pull/12526) by [@Tolerblanc](https://github.com/Tolerblanc).
