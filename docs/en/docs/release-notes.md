@@ -7,6 +7,10 @@ hide:
 
 ## Latest Changes
 
+### Fixes
+
+* 🐛 Ensure that `HTTPDigest` only raises an exception when `auto_error is True`. PR [#2939](https://github.com/fastapi/fastapi/pull/2939) by [@arthurio](https://github.com/arthurio).
+
 ### Refactors
 
 * ✅ Simplify tests for `query_params_str_validations`. PR [#13218](https://github.com/fastapi/fastapi/pull/13218) by [@alv2017](https://github.com/alv2017).
@@ -15,6 +19,7 @@ hide:
 
 ### Docs
 
+* 🍱 Update sponsors: CodeRabbit logo. PR [#13424](https://github.com/fastapi/fastapi/pull/13424) by [@tiangolo](https://github.com/tiangolo).
 * 🩺 Unify the badges across all tutorial translations. PR [#13329](https://github.com/fastapi/fastapi/pull/13329) by [@svlandeg](https://github.com/svlandeg).
 * 📝 Fix typos in virtual environments documentation. PR [#13396](https://github.com/fastapi/fastapi/pull/13396) by [@bullet-ant](https://github.com/bullet-ant).
 * 🐛 Fix issue with Swagger theme change example in the official tutorial. PR [#13289](https://github.com/fastapi/fastapi/pull/13289) by [@Zerohertz](https://github.com/Zerohertz).
@@ -48,6 +53,8 @@ hide:
 
 ### Internal
 
+* ✅ Fix a minor bug in the test `tests/test_modules_same_name_body/test_main.py`. PR [#13411](https://github.com/fastapi/fastapi/pull/13411) by [@alv2017](https://github.com/alv2017).
+* 👷 Use `wrangler-action` v3. PR [#13415](https://github.com/fastapi/fastapi/pull/13415) by [@joakimnordling](https://github.com/joakimnordling).
 * 🔧 Update sponsors: add CodeRabbit. PR [#13402](https://github.com/fastapi/fastapi/pull/13402) by [@tiangolo](https://github.com/tiangolo).
 * 🔧 Update team: Add Ludovico. PR [#13390](https://github.com/fastapi/fastapi/pull/13390) by [@tiangolo](https://github.com/tiangolo).
 * 🔧 Update sponsors: Add LambdaTest. PR [#13389](https://github.com/fastapi/fastapi/pull/13389) by [@tiangolo](https://github.com/tiangolo).
