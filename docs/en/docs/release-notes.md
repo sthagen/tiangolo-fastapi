@@ -7,6 +7,15 @@ hide:
 
 ## Latest Changes
 
+### Docs
+
+* 📝 Update contributing guidelines for installing requirements. PR [#14095](https://github.com/fastapi/fastapi/pull/14095) by [@alejsdev](https://github.com/alejsdev).
+
+### Internal
+
+* 🐛 Fix sponsor display issue by hiding element on image error. PR [#14097](https://github.com/fastapi/fastapi/pull/14097) by [@alejsdev](https://github.com/alejsdev).
+* 🐛 Hide sponsor badge when sponsor image is not displayed. PR [#14096](https://github.com/fastapi/fastapi/pull/14096) by [@alejsdev](https://github.com/alejsdev).
+
 ## 0.117.1
 
 ### Fixes
