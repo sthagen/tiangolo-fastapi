@@ -7,6 +7,11 @@ hide:
 
 ## Latest Changes
 
+### Docs
+
+* 📝 Fix typos in code comments. PR [#14364](https://github.com/fastapi/fastapi/pull/14364) by [@Edge-Seven](https://github.com/Edge-Seven).
+* 📝 Add docs for using FastAPI Cloud. PR [#14359](https://github.com/fastapi/fastapi/pull/14359) by [@tiangolo](https://github.com/tiangolo).
+
 ## 0.121.2
 
 ### Fixes
