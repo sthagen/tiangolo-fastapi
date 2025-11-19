@@ -7,8 +7,19 @@ hide:
 
 ## Latest Changes
 
+## 0.121.3
+
+### Refactors
+
+* ♻️ Make the result of `Depends()` and `Security()` hashable, as a workaround for other tools interacting with these internal parts. PR [#14372](https://github.com/fastapi/fastapi/pull/14372) by [@tiangolo](https://github.com/tiangolo).
+
+### Upgrades
+
+* ⬆️ Bump Starlette to <`0.51.0`. PR [#14282](https://github.com/fastapi/fastapi/pull/14282) by [@musicinmybrain](https://github.com/musicinmybrain).
+
 ### Docs
 
+* 📝 Add missing hash part. PR [#14369](https://github.com/fastapi/fastapi/pull/14369) by [@nilslindemann](https://github.com/nilslindemann).
 * 📝 Fix typos in code comments. PR [#14364](https://github.com/fastapi/fastapi/pull/14364) by [@Edge-Seven](https://github.com/Edge-Seven).
 * 📝 Add docs for using FastAPI Cloud. PR [#14359](https://github.com/fastapi/fastapi/pull/14359) by [@tiangolo](https://github.com/tiangolo).
 
