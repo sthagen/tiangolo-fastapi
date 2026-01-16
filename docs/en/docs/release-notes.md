@@ -9,6 +9,7 @@ hide:
 
 ### Docs
 
+* 🐛 Fix copy button in custom.js. PR [#14722](https://github.com/fastapi/fastapi/pull/14722) by [@fcharrier](https://github.com/fcharrier).
 * 📝 Add contribution instructions about LLM generated code and comments and automated tools for PRs. PR [#14706](https://github.com/fastapi/fastapi/pull/14706) by [@tiangolo](https://github.com/tiangolo).
 * 📝 Update docs for management tasks. PR [#14705](https://github.com/fastapi/fastapi/pull/14705) by [@tiangolo](https://github.com/tiangolo).
 * 📝 Update docs about managing translations. PR [#14704](https://github.com/fastapi/fastapi/pull/14704) by [@tiangolo](https://github.com/tiangolo).
@@ -17,6 +18,9 @@ hide:
 
 ### Translations
 
+* 🌐 Update portuguese llm-prompt.md. PR [#14702](https://github.com/fastapi/fastapi/pull/14702) by [@ceb10n](https://github.com/ceb10n).
+* 🌐 Update LLM prompt instructions file for French. PR [#14618](https://github.com/fastapi/fastapi/pull/14618) by [@tiangolo](https://github.com/tiangolo).
+* 🌐 Update translations for ko (add-missing). PR [#14699](https://github.com/fastapi/fastapi/pull/14699) by [@tiangolo](https://github.com/tiangolo).
 * 🌐 Update translations for ko (update-outdated). PR [#14589](https://github.com/fastapi/fastapi/pull/14589) by [@tiangolo](https://github.com/tiangolo).
 * 🌐 Update translations for uk (update-outdated). PR [#14587](https://github.com/fastapi/fastapi/pull/14587) by [@tiangolo](https://github.com/tiangolo).
 * 🌐 Update translations for es (update-outdated). PR [#14686](https://github.com/fastapi/fastapi/pull/14686) by [@tiangolo](https://github.com/tiangolo).
