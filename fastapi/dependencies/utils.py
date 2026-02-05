@@ -204,7 +204,12 @@ def _get_signature(call: Callable[..., Any]) -> inspect.Signature:
         except NameError:
             # Handle type annotations with if TYPE_CHECKING, not used by FastAPI
             # e.g. dependency return types
-            signature = inspect.signature(call)
+            if sys.version_info >= (3, 14):
+                from annotationlib import Format
+
+                signature = inspect.signature(call, annotation_format=Format.FORWARDREF)
+            else:
+                signature = inspect.signature(call)
     else:
         signature = inspect.signature(call)
     return signature
@@ -519,7 +524,7 @@ def analyze_param(
                     # For Pydantic v1
                     and getattr(field, "shape", 1) == 1
                 )
-            )
+            ), f"Query parameter {param_name!r} must be one of the supported types"
 
     return ParamDetails(type_annotation=type_annotation, depends=depends, field=field)
 
