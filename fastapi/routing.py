@@ -34,7 +34,6 @@ from fastapi import params
 from fastapi._compat import (
     ModelField,
     Undefined,
-    annotation_is_pydantic_v1,
     lenient_issubclass,
 )
 from fastapi.datastructures import Default, DefaultPlaceholder
@@ -52,7 +51,6 @@ from fastapi.encoders import jsonable_encoder
 from fastapi.exceptions import (
     EndpointContext,
     FastAPIError,
-    PydanticV1NotSupportedError,
     RequestValidationError,
     ResponseValidationError,
     WebSocketRequestValidationError,
@@ -277,15 +275,12 @@ async def serialize_response(
     endpoint_ctx: Optional[EndpointContext] = None,
 ) -> Any:
     if field:
-        errors = []
         if is_coroutine:
-            value, errors_ = field.validate(response_content, {}, loc=("response",))
+            value, errors = field.validate(response_content, {}, loc=("response",))
         else:
-            value, errors_ = await run_in_threadpool(
+            value, errors = await run_in_threadpool(
                 field.validate, response_content, {}, loc=("response",)
             )
-        if isinstance(errors_, list):
-            errors.extend(errors_)
         if errors:
             ctx = endpoint_ctx or EndpointContext()
             raise ResponseValidationError(
@@ -641,11 +636,6 @@ class APIRoute(routing.Route):
                 f"Status code {status_code} must not have a response body"
             )
             response_name = "Response_" + self.unique_id
-            if annotation_is_pydantic_v1(self.response_model):
-                raise PydanticV1NotSupportedError(
-                    "pydantic.v1 models are no longer supported by FastAPI."
-                    f" Please update the response model {self.response_model!r}."
-                )
             self.response_field = create_model_field(
                 name=response_name,
                 type_=self.response_model,
@@ -667,11 +657,6 @@ class APIRoute(routing.Route):
                     f"Status code {additional_status_code} must not have a response body"
                 )
                 response_name = f"Response_{additional_status_code}_{self.unique_id}"
-                if annotation_is_pydantic_v1(model):
-                    raise PydanticV1NotSupportedError(
-                        "pydantic.v1 models are no longer supported by FastAPI."
-                        f" In responses={{}}, please update {model}."
-                    )
                 response_field = create_model_field(
                     name=response_name, type_=model, mode="serialization"
                 )
