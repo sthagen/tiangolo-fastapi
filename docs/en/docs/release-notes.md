@@ -9,6 +9,7 @@ hide:
 
 ### Docs
 
+* 🔥 Remove Python 3.9 specific files, no longer needed after updating translations. PR [#14931](https://github.com/fastapi/fastapi/pull/14931) by [@tiangolo](https://github.com/tiangolo).
 * 📝 Update docs for JWT to prevent timing attacks. PR [#14908](https://github.com/fastapi/fastapi/pull/14908) by [@tiangolo](https://github.com/tiangolo).
 
 ### Translations
@@ -28,6 +29,7 @@ hide:
 
 ### Internal
 
+* 🎨 Upgrade typing syntax for Python 3.10. PR [#14932](https://github.com/fastapi/fastapi/pull/14932) by [@tiangolo](https://github.com/tiangolo).
 * ⬆ Bump cryptography from 46.0.4 to 46.0.5. PR [#14892](https://github.com/fastapi/fastapi/pull/14892) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump pillow from 12.1.0 to 12.1.1. PR [#14899](https://github.com/fastapi/fastapi/pull/14899) by [@dependabot[bot]](https://github.com/apps/dependabot).
 
