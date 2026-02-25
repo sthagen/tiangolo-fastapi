@@ -42,7 +42,7 @@ classifiers = [
     "Topic :: Internet :: WWW/HTTP",
 ]
 dependencies = [
-    "starlette>=0.40.0,<1.0.0",
+    "starlette>=0.40.0",
     "pydantic>=2.7.0",
     "typing-extensions>=4.8.0",
     "typing-inspection>=0.4.2",
@@ -242,6 +242,7 @@ relative_files = true
 context = '${CONTEXT}'
 dynamic_context = "test_function"
 omit = [
+    "tests/benchmarks/*",
     "docs_src/response_model/tutorial003_04_py39.py",
     "docs_src/response_model/tutorial003_04_py310.py",
     "docs_src/dependencies/tutorial013_an_py310.py",  # temporary code example?
