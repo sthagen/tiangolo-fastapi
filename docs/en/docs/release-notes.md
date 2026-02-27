@@ -7,6 +7,19 @@ hide:
 
 ## Latest Changes
 
+### Features
+
+* ✨ Add support for streaming JSON Lines and binary data with `yield`. PR [#15022](https://github.com/fastapi/fastapi/pull/15022) by [@tiangolo](https://github.com/tiangolo).
+
+### Docs
+
+* 📝 Add `await` in `StreamingResponse` code example to allow cancellation. PR [#14681](https://github.com/fastapi/fastapi/pull/14681) by [@casperdcl](https://github.com/casperdcl).
+* 📝 Rename `docs_src/websockets` to `docs_src/websockets_` to avoid import errors. PR [#14979](https://github.com/fastapi/fastapi/pull/14979) by [@YuriiMotov](https://github.com/YuriiMotov).
+
+### Internal
+
+* 🔨 Run tests with `pytest-xdist` and `pytest-cov`. PR [#14992](https://github.com/fastapi/fastapi/pull/14992) by [@YuriiMotov](https://github.com/YuriiMotov).
+
 ## 0.133.1
 
 ### Features
