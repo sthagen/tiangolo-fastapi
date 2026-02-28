@@ -7,12 +7,19 @@ hide:
 
 ## Latest Changes
 
+## 0.134.0
+
 ### Features
 
 * ✨ Add support for streaming JSON Lines and binary data with `yield`. PR [#15022](https://github.com/fastapi/fastapi/pull/15022) by [@tiangolo](https://github.com/tiangolo).
+    * This also upgrades Starlette from `>=0.40.0` to `>=0.46.0`, as it's needed to properly unrwap and re-raise exceptions from exception groups.
+    * New docs: [Stream JSON Lines](https://fastapi.tiangolo.com/tutorial/stream-json-lines/).
+    * And new docs: [Stream Data](https://fastapi.tiangolo.com/advanced/stream-data/).
 
 ### Docs
 
+* 📝 Update Library Agent Skill with streaming responses. PR [#15024](https://github.com/fastapi/fastapi/pull/15024) by [@tiangolo](https://github.com/tiangolo).
+* 📝 Update docs for responses and new stream with `yield`. PR [#15023](https://github.com/fastapi/fastapi/pull/15023) by [@tiangolo](https://github.com/tiangolo).
 * 📝 Add `await` in `StreamingResponse` code example to allow cancellation. PR [#14681](https://github.com/fastapi/fastapi/pull/14681) by [@casperdcl](https://github.com/casperdcl).
 * 📝 Rename `docs_src/websockets` to `docs_src/websockets_` to avoid import errors. PR [#14979](https://github.com/fastapi/fastapi/pull/14979) by [@YuriiMotov](https://github.com/YuriiMotov).
 
