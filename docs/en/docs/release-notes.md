@@ -7,6 +7,17 @@ hide:
 
 ## Latest Changes
 
+### Docs
+
+* 📝 Update Skill, optimize context, trim and refactor into references. PR [#15031](https://github.com/fastapi/fastapi/pull/15031) by [@tiangolo](https://github.com/tiangolo).
+
+## 0.135.0
+
+### Features
+
+* ✨ Add support for Server Sent Events. PR [#15030](https://github.com/fastapi/fastapi/pull/15030) by [@tiangolo](https://github.com/tiangolo).
+    * New docs: [Server-Sent Events (SSE)](https://fastapi.tiangolo.com/tutorial/server-sent-events/).
+
 ## 0.134.0
 
 ### Features
