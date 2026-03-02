@@ -7,9 +7,22 @@ hide:
 
 ## Latest Changes
 
+## 0.135.1
+
+### Fixes
+
+* 🐛 Fix, avoid yield from a TaskGroup, only as an async context manager, closed in the request async exit stack. PR [#15038](https://github.com/fastapi/fastapi/pull/15038) by [@tiangolo](https://github.com/tiangolo).
+
 ### Docs
 
+* ✏️ Fix typo in `docs/en/docs/_llm-test.md`. PR [#15007](https://github.com/fastapi/fastapi/pull/15007) by [@adityagiri3600](https://github.com/adityagiri3600).
 * 📝 Update Skill, optimize context, trim and refactor into references. PR [#15031](https://github.com/fastapi/fastapi/pull/15031) by [@tiangolo](https://github.com/tiangolo).
+
+### Internal
+
+* 👥 Update FastAPI People - Experts. PR [#15037](https://github.com/fastapi/fastapi/pull/15037) by [@tiangolo](https://github.com/tiangolo).
+* 👥 Update FastAPI People - Contributors and Translators. PR [#15029](https://github.com/fastapi/fastapi/pull/15029) by [@tiangolo](https://github.com/tiangolo).
+* 👥 Update FastAPI GitHub topic repositories. PR [#15036](https://github.com/fastapi/fastapi/pull/15036) by [@tiangolo](https://github.com/tiangolo).
 
 ## 0.135.0
 
