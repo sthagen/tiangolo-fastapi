@@ -9,6 +9,25 @@ hide:
 
 ### Internal
 
+* 🔧 Update sponsors: remove Zuplo. PR [#15369](https://github.com/fastapi/fastapi/pull/15369) by [@tiangolo](https://github.com/tiangolo).
+* 🔧 Update sponsors: remove Speakeasy. PR [#15368](https://github.com/fastapi/fastapi/pull/15368) by [@tiangolo](https://github.com/tiangolo).
+* 🔒️ Add zizmor and fix audit findings. PR [#15316](https://github.com/fastapi/fastapi/pull/15316) by [@YuriiMotov](https://github.com/YuriiMotov).
+
+## 0.136.0 (2026-04-16)
+
+### Upgrades
+
+* ⬆️ Support free-threaded Python 3.14t. PR [#15149](https://github.com/fastapi/fastapi/pull/15149) by [@svlandeg](https://github.com/svlandeg).
+
+## 0.135.4 (2026-04-16)
+
+### Refactors
+
+* 🔥 Remove April Fool's `@app.vibe()` 🤪. PR [#15363](https://github.com/fastapi/fastapi/pull/15363) by [@tiangolo](https://github.com/tiangolo).
+
+### Internal
+
+* ⬆ Bump cryptography from 46.0.5 to 46.0.7. PR [#15314](https://github.com/fastapi/fastapi/pull/15314) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump strawberry-graphql from 0.307.1 to 0.312.3. PR [#15309](https://github.com/fastapi/fastapi/pull/15309) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * 🔨 Add pre-commit hook to ensure latest release header has date. PR [#15293](https://github.com/fastapi/fastapi/pull/15293) by [@YuriiMotov](https://github.com/YuriiMotov).
 
