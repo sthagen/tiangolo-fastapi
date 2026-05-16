@@ -20,6 +20,11 @@ hide:
 
 ### Internal
 
+* ⬆ Bump actions/add-to-project from 1.0.2 to 2.0.0. PR [#15490](https://github.com/fastapi/fastapi/pull/15490) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump actions/labeler from 6.0.1 to 6.1.0. PR [#15507](https://github.com/fastapi/fastapi/pull/15507) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* 🔧 Remove Ruff ignored rule for tabs. PR [#15533](https://github.com/fastapi/fastapi/pull/15533) by [@tiangolo](https://github.com/tiangolo).
+* 🔧 Update sponsors badge. PR [#15532](https://github.com/fastapi/fastapi/pull/15532) by [@tiangolo](https://github.com/tiangolo).
+* 🔧 Add sponsor: TalorData. PR [#15531](https://github.com/fastapi/fastapi/pull/15531) by [@tiangolo](https://github.com/tiangolo).
 * ⬆ Bump ty from 0.0.21 to 0.0.34. PR [#15443](https://github.com/fastapi/fastapi/pull/15443) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump pydantic from 2.13.2 to 2.13.3. PR [#15444](https://github.com/fastapi/fastapi/pull/15444) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * 👷 Add pre-commit to check typos. PR [#15482](https://github.com/fastapi/fastapi/pull/15482) by [@tiangolo](https://github.com/tiangolo).
