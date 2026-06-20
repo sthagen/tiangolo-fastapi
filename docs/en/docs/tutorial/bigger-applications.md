@@ -17,16 +17,16 @@ Let's say you have a file structure like this:
 ```
 .
 ├── app
-│   ├── __init__.py
-│   ├── main.py
-│   ├── dependencies.py
-│   └── routers
-│   │   ├── __init__.py
-│   │   ├── items.py
-│   │   └── users.py
-│   └── internal
-│       ├── __init__.py
-│       └── admin.py
+│   ├── __init__.py
+│   ├── main.py
+│   ├── dependencies.py
+│   └── routers
+│   │   ├── __init__.py
+│   │   ├── items.py
+│   │   └── users.py
+│   └── internal
+│       ├── __init__.py
+│       └── admin.py
 ```
 
 /// tip
@@ -232,7 +232,7 @@ would mean:
 
 But that file doesn't exist, our dependencies are in a file at `app/dependencies.py`.
 
-Remember how our app/file structure looks like:
+Remember what our app/file structure looks like:
 
 <img src="/img/tutorial/bigger-applications/package.drawio.svg">
 
