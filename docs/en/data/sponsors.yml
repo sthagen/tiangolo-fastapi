@@ -45,21 +45,18 @@ silver:
   - url: https://www.svix.com/
     title: Svix - Webhooks as a service
     img: /img/sponsors/svix.svg
-  - url: https://www.stainlessapi.com/?utm_source=fastapi&utm_medium=referral
-    title: Stainless | Generate best-in-class SDKs
-    img: /img/sponsors/stainless.png
   - url: https://www.permit.io/blog/implement-authorization-in-fastapi?utm_source=github&utm_medium=referral&utm_campaign=fastapi
     title: Fine-Grained Authorization for FastAPI
     img: /img/sponsors/permit.png
   - url: https://dribia.com/en/
     title: Dribia - Data Science within your reach
     img: /img/sponsors/dribia.png
-  - url: https://www.rapidproxy.io/?ref=fastapi
-    title: Try RapidProxy for free - Residential Proxies with 90M+ Global IPs. Starting from $0.65/GB for web scraping, automation, and data collection.
-    img: /img/sponsors/rapidproxy.png
   - url: https://www.bairesdev.com/
     title: "BairesDev | Nearshore Software Development & Staff Augmentation Company"
     img: /img/sponsors/bairesdev.svg
+  - url: https://tutorcruncher.com/?utm_source=fastapi
+    title: TutorCruncher
+    img: /img/sponsors/tutorcruncher.png
 bronze:
   # - url: https://testdriven.io/courses/tdd-fastapi/
   #   title: Learn to build high-quality web apps with best practices
