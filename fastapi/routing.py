@@ -7,6 +7,7 @@ import inspect
 import json
 import os
 import stat
+import threading
 import types
 from collections.abc import (
     AsyncIterator,
@@ -47,7 +48,12 @@ from fastapi._compat import (
     lenient_issubclass,
 )
 from fastapi.datastructures import Default, DefaultPlaceholder
-from fastapi.dependencies.models import Dependant
+from fastapi.dependencies.models import (
+    Dependant,
+    _is_async_gen_callable,
+    _is_coroutine_callable,
+    _is_gen_callable,
+)
 from fastapi.dependencies.utils import (
     _should_embed_body_fields,
     get_body_field,
@@ -383,7 +389,7 @@ def get_request_handler(
     is_json_stream: bool = False,
 ) -> Callable[[Request], Coroutine[Any, Any, Response]]:
     assert dependant.call is not None, "dependant.call must be a function"
-    is_coroutine = dependant.is_coroutine_callable
+    is_coroutine = _is_coroutine_callable(dependant.call)
     is_body_form = body_field and isinstance(body_field.field_info, params.Form)
     if isinstance(response_class, DefaultPlaceholder):
         actual_response_class: type[Response] = response_class.value
@@ -542,7 +548,7 @@ def get_request_handler(
                             data_str=_serialize_data(item).decode("utf-8")
                         )
 
-                if dependant.is_async_gen_callable:
+                if _is_async_gen_callable(dependant.call):
                     sse_aiter: AsyncIterator[Any] = gen.__aiter__()
                 else:
                     sse_aiter = iterate_in_threadpool(gen)
@@ -640,7 +646,7 @@ def get_request_handler(
                 def _serialize_item(item: Any) -> bytes:
                     return _serialize_data(item) + b"\n"
 
-                if dependant.is_async_gen_callable:
+                if _is_async_gen_callable(dependant.call):
 
                     async def _async_stream_jsonl() -> AsyncIterator[bytes]:
                         async for item in gen:
@@ -666,10 +672,12 @@ def get_request_handler(
                     background=solved_result.background_tasks,
                 )
                 response.headers.raw.extend(solved_result.response.headers.raw)
-            elif dependant.is_async_gen_callable or dependant.is_gen_callable:
+            elif _is_async_gen_callable(dependant.call) or _is_gen_callable(
+                dependant.call
+            ):
                 # Raw streaming with explicit response_class (e.g. StreamingResponse)
                 gen = dependant.call(**solved_result.values)
-                if dependant.is_async_gen_callable:
+                if _is_async_gen_callable(dependant.call):
 
                     async def _async_stream_raw(
                         async_gen: AsyncIterator[Any],
@@ -1096,8 +1104,8 @@ def _populate_api_route_state(
         embed_body_fields=route._embed_body_fields,
     )
     # Detect generator endpoints that should stream as JSONL or SSE
-    is_generator = (
-        route.dependant.is_async_gen_callable or route.dependant.is_gen_callable
+    is_generator = _is_async_gen_callable(route.dependant.call) or _is_gen_callable(
+        route.dependant.call
     )
     route.is_sse_stream = is_generator and lenient_issubclass(
         response_class, EventSourceResponse
@@ -1571,6 +1579,9 @@ class RouteContext:
 class _IncludedRouter(BaseRoute):
     original_router: "APIRouter"
     include_context: _RouterIncludeContext
+    _effective_routes_lock: Any = field(
+        default_factory=threading.Lock, repr=False, compare=False
+    )
     _effective_candidates: list["_EffectiveRouteContext | _IncludedRouter"] = field(
         default_factory=list
     )
@@ -1584,44 +1595,53 @@ class _IncludedRouter(BaseRoute):
         routes_version = self.original_router._get_routes_version()
         if routes_version == self._effective_candidates_version:
             return self._effective_candidates
-        self._effective_candidates = []
-        candidates = self.original_router.routes
-        for route in candidates:
-            if isinstance(route, _IncludedRouter):
-                child_context = self.include_context.combine(route.include_context)
-                child_branch = _IncludedRouter(
-                    original_router=route.original_router,
-                    include_context=child_context,
-                )
-                self._effective_candidates.append(child_branch)
-                continue
-            route_context = self._build_effective_context(route)
-            if route_context is not None:
-                self._effective_candidates.append(route_context)
-        self._effective_candidates_version = routes_version
-        return self._effective_candidates
+        with self._effective_routes_lock:
+            routes_version = self.original_router._get_routes_version()
+            if routes_version == self._effective_candidates_version:
+                return self._effective_candidates
+            effective_candidates: list[_EffectiveRouteContext | _IncludedRouter] = []
+            for route in self.original_router.routes:
+                if isinstance(route, _IncludedRouter):
+                    child_context = self.include_context.combine(route.include_context)
+                    child_branch = _IncludedRouter(
+                        original_router=route.original_router,
+                        include_context=child_context,
+                    )
+                    effective_candidates.append(child_branch)
+                    continue
+                route_context = self._build_effective_context(route)
+                if route_context is not None:
+                    effective_candidates.append(route_context)
+            self._effective_candidates = effective_candidates
+            self._effective_candidates_version = routes_version
+            return effective_candidates
 
     def effective_low_priority_routes(self) -> list["_EffectiveRouteContext"]:
         routes_version = self.original_router._get_routes_version()
         if routes_version == self._effective_low_priority_routes_version:
             return self._effective_low_priority_routes
-        self._effective_low_priority_routes = []
-        for route in self.original_router._low_priority_routes:
-            route_context = self._build_effective_context(route)
-            if route_context is not None:
-                self._effective_low_priority_routes.append(route_context)
-        for route in self.original_router.routes:
-            if isinstance(route, _IncludedRouter):
-                child_context = self.include_context.combine(route.include_context)
-                child_branch = _IncludedRouter(
-                    original_router=route.original_router,
-                    include_context=child_context,
-                )
-                self._effective_low_priority_routes.extend(
-                    child_branch.effective_low_priority_routes()
-                )
-        self._effective_low_priority_routes_version = routes_version
-        return self._effective_low_priority_routes
+        with self._effective_routes_lock:
+            routes_version = self.original_router._get_routes_version()
+            if routes_version == self._effective_low_priority_routes_version:
+                return self._effective_low_priority_routes
+            effective_low_priority_routes: list[_EffectiveRouteContext] = []
+            for route in self.original_router._low_priority_routes:
+                route_context = self._build_effective_context(route)
+                if route_context is not None:
+                    effective_low_priority_routes.append(route_context)
+            for route in self.original_router.routes:
+                if isinstance(route, _IncludedRouter):
+                    child_context = self.include_context.combine(route.include_context)
+                    child_branch = _IncludedRouter(
+                        original_router=route.original_router,
+                        include_context=child_context,
+                    )
+                    effective_low_priority_routes.extend(
+                        child_branch.effective_low_priority_routes()
+                    )
+            self._effective_low_priority_routes = effective_low_priority_routes
+            self._effective_low_priority_routes_version = routes_version
+            return effective_low_priority_routes
 
     def _build_effective_context(
         self, route: BaseRoute
@@ -1984,24 +2004,13 @@ def _iter_accept_media_types(accept: str) -> Iterator[tuple[str, float]]:
 
 
 def _is_frontend_navigation_request(scope: Scope) -> bool:
-    route_path = get_route_path(scope)
-    final_segment = route_path.rsplit("/", 1)[-1]
-    if os.path.splitext(final_segment)[1]:
-        return False
     request = Request(scope)
-    wildcard_accepted = False
-    html_rejected = False
     for media_type, quality in _iter_accept_media_types(
         request.headers.get("accept", "")
     ):
-        if media_type in {"text/html", "application/xhtml+xml"}:
-            if quality == 0:
-                html_rejected = True
-            else:
-                return True
-        elif media_type == "*/*" and quality != 0:
-            wildcard_accepted = True
-    return wildcard_accepted and not html_rejected
+        if media_type in {"text/html", "application/xhtml+xml"} and quality != 0:
+            return True
+    return False
 
 
 class _FrontendRoute(BaseRoute):
