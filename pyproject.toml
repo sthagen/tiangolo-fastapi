@@ -58,7 +58,7 @@ Changelog = "https://fastapi.tiangolo.com/release-notes/"
 
 [project.optional-dependencies]
 standard = [
-    "fastapi-cli[standard] >=0.0.8",
+    "fastapi-cli[standard] >=0.0.32",
     "fastar >= 0.9.0",
     # For the test client
     "httpx >=0.23.0,<1.0.0",
@@ -77,7 +77,7 @@ standard = [
 ]
 
 standard-no-fastapi-cloud-cli = [
-    "fastapi-cli[standard-no-fastapi-cloud-cli] >=0.0.8",
+    "fastapi-cli[standard-no-fastapi-cloud-cli] >=0.0.32",
     # For the test client
     "httpx >=0.23.0,<1.0.0",
     # For templates
@@ -95,7 +95,7 @@ standard-no-fastapi-cloud-cli = [
 ]
 
 all = [
-    "fastapi-cli[standard] >=0.0.8",
+    "fastapi-cli[standard] >=0.0.32",
     # # For the test client
     "httpx >=0.23.0,<1.0.0",
     # For templates
@@ -175,7 +175,7 @@ tests = [
     "ty>=0.0.25",
     "typer >=0.24.1",
     "a2wsgi >=1.9.0,<=2.0.0",
-    "pytest-xdist[psutil]>=2.5.0",
+    "pytest-xdist[psutil]>=3.0.2",
     "pytest-cov>=4.0.0",
     "pytest-sugar>=1.0.0",
     "pytest-timeout>=2.4.0",

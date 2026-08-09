@@ -7,7 +7,15 @@ from typing import Literal
 
 import anyio
 import pytest
-from fastapi import APIRouter, Depends, FastAPI, HTTPException, Request, WebSocket
+from fastapi import (
+    APIRouter,
+    BackgroundTasks,
+    Depends,
+    FastAPI,
+    HTTPException,
+    Request,
+    WebSocket,
+)
 from fastapi.testclient import TestClient
 from starlette.exceptions import HTTPException as StarletteHTTPException
 from starlette.responses import PlainTextResponse, Response
@@ -489,6 +497,30 @@ def test_app_middleware_still_runs_for_frontend_dependencies(tmp_path: Path):
     assert response.status_code == 200
     assert response.text == "app"
     assert calls == ["middleware-before", "dependency", "middleware-after"]
+
+
+def test_frontend_dependency_response_headers_and_background_tasks(tmp_path: Path):
+    calls: list[str] = []
+
+    def frontend_dependency(
+        response: Response, background_tasks: BackgroundTasks
+    ) -> None:
+        response.headers["X-Frontend-Dependency"] = "applied"
+        response.set_cookie("frontend", "dependency")
+        background_tasks.add_task(calls.append, "background")
+
+    dist = tmp_path / "dist"
+    write_file(dist / "index.html", "app")
+    app = FastAPI(dependencies=[Depends(frontend_dependency)])
+    app.frontend("/", directory=dist)
+
+    response = TestClient(app).get("/")
+
+    assert response.status_code == 200
+    assert response.text == "app"
+    assert response.headers["X-Frontend-Dependency"] == "applied"
+    assert response.cookies["frontend"] == "dependency"
+    assert calls == ["background"]
 
 
 def test_frontend_dependency_validation_errors_return_422(tmp_path: Path):
@@ -1176,11 +1208,48 @@ def test_check_dir_true_fails_early_for_missing_directory(monkeypatch, tmp_path:
     monkeypatch.chdir(tmp_path)
 
     with pytest.raises(RuntimeError, match="does not exist") as exc_info:
-        app.frontend("/", directory="missing")
+        app.frontend("/", directory="missing", check_dir=True)
 
     message = str(exc_info.value)
     assert "'missing'" in message
     assert str(tmp_path / "missing") in message
+
+
+def test_check_dir_auto_warns_in_development(monkeypatch, tmp_path: Path):
+    monkeypatch.setenv("FASTAPI_ENV", "development")
+    app = FastAPI()
+
+    with pytest.warns(UserWarning, match="does not exist") as warnings:
+        app.frontend("/", directory=tmp_path / "missing")
+
+    assert str(tmp_path / "missing") in str(warnings[0].message)
+    assert warnings[0].filename == __file__
+
+
+def test_check_dir_auto_router_warning_points_to_user_code(monkeypatch, tmp_path: Path):
+    monkeypatch.setenv("FASTAPI_ENV", "development")
+    router = APIRouter()
+
+    with pytest.warns(UserWarning, match="does not exist") as warnings:
+        router.frontend("/", directory=tmp_path / "missing")
+
+    assert warnings[0].filename == __file__
+
+
+def test_check_dir_true_fails_in_development(monkeypatch, tmp_path: Path):
+    monkeypatch.setenv("FASTAPI_ENV", "development")
+    app = FastAPI()
+
+    with pytest.raises(RuntimeError, match="does not exist"):
+        app.frontend("/", directory=tmp_path / "missing", check_dir=True)
+
+
+def test_check_dir_auto_fails_outside_development(monkeypatch, tmp_path: Path):
+    monkeypatch.setenv("FASTAPI_ENV", "production")
+    router = APIRouter()
+
+    with pytest.raises(RuntimeError, match="does not exist"):
+        router.frontend("/", directory=tmp_path / "missing")
 
 
 def test_check_dir_false_allows_missing_directory_and_fails_on_request(tmp_path: Path):
