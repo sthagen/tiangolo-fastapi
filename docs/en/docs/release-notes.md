@@ -17,6 +17,11 @@ hide:
 
 ### Internal
 
+* 👷 Migrate automatic labels to Latest Changes. PR [#16185](https://github.com/fastapi/fastapi/pull/16185) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Fix branch name in `zizmor.yml` workflow (`main` -> `master`). PR [#16178](https://github.com/fastapi/fastapi/pull/16178) by [@YuriiMotov](https://github.com/YuriiMotov).
+* 👷 Remove legacy label check. PR [#16180](https://github.com/fastapi/fastapi/pull/16180) by [@tiangolo](https://github.com/tiangolo).
+* ⬆ Bump pymdown-extensions from 11.0 to 11.0.1. PR [#16162](https://github.com/fastapi/fastapi/pull/16162) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump gitpython from 3.1.57 to 3.1.58. PR [#16157](https://github.com/fastapi/fastapi/pull/16157) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * 👥 Update FastAPI People - Sponsors. PR [#16175](https://github.com/fastapi/fastapi/pull/16175) by [@pr-submit[bot]](https://github.com/apps/pr-submit).
 * 🐛 Fix Sponsors Git authentication. PR [#16174](https://github.com/fastapi/fastapi/pull/16174) by [@tiangolo](https://github.com/tiangolo).
 * 👥 Update FastAPI GitHub topic repositories. PR [#16173](https://github.com/fastapi/fastapi/pull/16173) by [@pr-submit[bot]](https://github.com/apps/pr-submit).
